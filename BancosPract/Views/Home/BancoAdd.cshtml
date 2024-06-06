@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Alta de Cliente";
+}
+
+<div class="text-center">
+    <h1 class="display-2"> Alta de Cliente</h1>
+</div>
+
+<form asp-controller="Home" asp-action="BancoSave">
+<div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba nombre de cliente" />
+    </div>
+    <div asp-validation-summary="All" class="Text-danger"></div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+
+    <a asp-controller="Degree" asp-action="DegreeList" class="btn btn-secundary mb-3"> Regresar </a>
+
+</form>

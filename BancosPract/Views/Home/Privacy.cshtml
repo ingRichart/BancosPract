@@ -1,0 +1,52 @@
+﻿@model List<BancosModel>
+@{
+    ViewData["Title"] = "Lista De Clientes En Banco";
+    int numero =0;
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Bienvenido a la lista de Clientes del Banco Norte.</p>
+<h1>Lista de Clientes</h1>
+<a class="btn btn-outline.primary" asp-action="Home" asp-asp-controller="BancoAdd">Agregar Registro de Cliente</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">No. Cuenta</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Dinero Acumulado</th>
+            </tr>
+    </thead>
+    
+    <tbody>
+        @foreach( var cliente in Model )
+        {
+        {
+            numero++;
+        }
+
+         <tr>
+            <th scope="row">@numero</th>
+            <td>@cliente.Name</td>
+            <td>@cliente.NoCuenta</td>
+            <td>@cliente.Address</td>
+            <td>@cliente.Cash</td>
+            
+            
+            <td>
+                <a class="btn btn-outline-info" asp-action="BancoEdit" asp-controller="Banco" asp-route-id="@cliente.Id">Editar</a>
+                <a class="btn btn-outline-danger" asp-action="BancoDelete" asp-controller="Banco" asp-route-id="@cliente.Id">Borrar</a>
+
+            </td>
+         </tr>
+
+
+
+        }
+            
+
+         
+    </tbody>
+</table>
