@@ -22,12 +22,36 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5jb0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Home/BancoDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5jb0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Home/BancoEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5jb0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Servicio/ServicioAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cU2VydmljaW9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Servicio/ServicioDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cU2VydmljaW9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Servicio/ServicioEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cU2VydmljaW9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Servicio/ServicioList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cU2VydmljaW9MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Merry/OneDrive/Documents/EXAMPLES_POOII/BancosPract/BancosPract/Views/Shared/Error.cshtml]

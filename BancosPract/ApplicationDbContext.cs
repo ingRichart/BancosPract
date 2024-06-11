@@ -10,6 +10,7 @@ namespace BancosPract
         }
 
         public DbSet<Bancos> Banco { get; set; }
+        public DbSet<Servicio> Servicios { get; set; }
 
     }
 }

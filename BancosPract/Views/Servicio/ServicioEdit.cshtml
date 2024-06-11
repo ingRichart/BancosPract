@@ -1,0 +1,35 @@
+@model ServiciosModel
+
+@{
+    ViewData["Title"] = "Editar Servicio";
+}
+
+<div class="text-center">
+    <h1 class="display-2"> Editar el Servicio Bancario</h1>
+</div>
+
+<form asp-action="ServicioEdit" asp asp-controller="Servicio">
+ <input type="hidden" asp-for-"Id">
+
+ <div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="NombreS" placeholder="Nombre Del Servicio">
+    <label asp-for="NombreS">Nombre Del Servicio</label>
+ </div>
+
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="Tipo" rows="5">
+    <label asp-for="Tipo">Tipo</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="NoCuentaS" rows="5">
+    <label asp-for="NoCuentaS">No de Cuenta Afiliada</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="Costo" rows="5">
+    <label asp-for="Costo">Costo</label>
+</div>
+
+<button class="btn btn-outline-primary">Guardar</button>
+<a class="btn btn-outline-secundary" asp-action="ServicioList"
+asp-controller="Servicio">Regresar</a>
+</form>

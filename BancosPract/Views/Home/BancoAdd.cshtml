@@ -1,20 +1,36 @@
+@model BancosModel
+
 @{
     ViewData["Title"] = "Alta de Cliente";
 }
 
 <div class="text-center">
-    <h1 class="display-2"> Alta de Cliente</h1>
+    <h1 class="display-2"> Alta de Bancos</h1>
 </div>
 
-<form asp-controller="Home" asp-action="BancoSave">
-<div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba nombre de cliente" />
+<div asp-validation-summary="All" class="Text-danger"></div>
+
+<form asp-controller="Home" asp-action="BancoAdd">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Escriba nombre de cliente" />
     </div>
-    <div asp-validation-summary="All" class="Text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Address" class="form-label">Direccion</label>
+        <input type="text" class="form-control" asp-for="Address" placeholder="Escriba su direccion" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="NoCuenta" class="form-label">No. Cuenta</label>
+        <input type="text" class="form-control" asp-for="NoCuenta" placeholder="Escriba numero de cuenta" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Cash" class="form-label">Dinero</label>
+        <input type="text" class="form-control" asp-for="Cash" placeholder="Escriba cantidad de dinero" />
+    </div>
+
 
     <button type="submit" class="btn btn-primary">Guardar</button>
 
-    <a asp-controller="Degree" asp-action="DegreeList" class="btn btn-secundary mb-3"> Regresar </a>
+    <a asp-controller="Home" asp-action="BancoAdd" class="btn btn-secundary mb-3"> Regresar </a>
 
 </form>

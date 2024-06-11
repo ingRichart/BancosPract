@@ -1,0 +1,39 @@
+@model BancosModel
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="text-center">
+    <h1 class="display-2"> Editar el Banco</h1>
+</div>
+
+<form asp-action="BancoEdit" asp asp-controller="Home">
+ <input type="hidden" asp-for-"Id">
+
+ <div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="Name" placeholder="Nombre cliente">
+    <label asp-for="Name">Nombre Cliente</label>
+ </div>
+
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="Address" rows="5">
+    <label asp-for="Address">Direccion</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="NoCuenta" rows="5">
+    <label asp-for="NoCuenta">No de Cuenta</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" asp-for="Cash" rows="5">
+    <label asp-for="Cash">Cantidad de dinero</label>
+</div>
+
+<button class="btn btn-outline-primary">Guardar</button>
+<a class="btn btn-outline-secundary" asp-action="Privacy"
+asp-controller="Home">Regresar</a>
+</form>
+
+
+
+    

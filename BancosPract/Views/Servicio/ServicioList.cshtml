@@ -1,0 +1,53 @@
+@model List<ServiciosModel>
+@{
+    ViewData["Title"] = "Lista De Servicios del Banco";
+    int numero =0;
+}
+<h1>@ViewData["Title"] Servicios Bancarios</h1>
+
+<p>Bienvenido a la lista de Servicios Bancarios del Banco Norte.</p>
+<h1>Lista de Servicios</h1>
+<a class="btn btn-outline.primary" asp-action="ServicioAdd" asp-asp-controller="Servicio">Agregar Servicio</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre del Servicio </th>
+            <th scope="col">Tipo de Servicio</th>
+            <th scope="col">No. de cuenta</th>
+            <th scope="col">Costo</th>
+            </tr>
+    </thead>
+    
+    <tbody>
+        @foreach( var servicio in Model )
+        {
+        {
+            numero++;
+        }
+
+         <tr>
+            <th scope="row">@numero</th>
+            <td>@servicio.NombreS</td>
+            <td>@servicio.Tipo</td>
+            <td>@servicio.NoCuentaS</td>
+            <td>@servicio.Costo</td>
+            
+            
+            
+            <td>
+                <a class="btn btn-outline-info" asp-action="ServicioEdit" asp-controller="Servicio" asp-route-id="@servicio.Id">Editar</a>
+                <a class="btn btn-outline-danger" asp-action="ServicioDelete" asp-controller="Servicio" asp-route-id="@servicio.Id">Borrar</a>
+
+            </td>
+         </tr>
+
+
+
+        }
+            
+
+         
+    </tbody>
+</table>

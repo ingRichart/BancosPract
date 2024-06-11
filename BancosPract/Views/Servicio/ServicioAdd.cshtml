@@ -1,0 +1,36 @@
+@model ServiciosModel
+
+@{
+    ViewData["Title"] = "Alta de Servicio Bancario";
+}
+
+<div class="text-center">
+    <h1 class="display-2"> Alta de Servicio</h1>
+</div>
+
+<div asp-validation-summary="All" class="Text-danger"></div>
+
+<form asp-controller="Servicio" asp-action="ServicioAdd">
+    <div class="mb-3">
+        <label asp-for="NombreS" class="form-label">Nombre del Servicio</label>
+        <input type="text" class="form-control" asp-for="NombreS" placeholder="Escriba nombre del Servicio" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Tipo" class="form-label">Tipo De Servicio</label>
+        <input type="text" class="form-control" asp-for="Tipo" placeholder="Escriba el Tipo de Servicio(Seguro,Prestamo..)" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="NoCuentaS" class="form-label">No. Cuenta Afiliada</label>
+        <input type="text" class="form-control" asp-for="NoCuentaS" placeholder="Escriba numero de cuenta Afiliada" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Costo" class="form-label">Costo</label>
+        <input type="text" class="form-control" asp-for="Costo" placeholder="Escriba el Costo del Servicio" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+
+    <a asp-controller="Servicio" asp-action="ServicioAdd" class="btn btn-secundary mb-3"> Regresar </a>
+
+</form>

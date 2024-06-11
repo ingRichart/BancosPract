@@ -7,7 +7,7 @@
 
 <p>Bienvenido a la lista de Clientes del Banco Norte.</p>
 <h1>Lista de Clientes</h1>
-<a class="btn btn-outline.primary" asp-action="Home" asp-asp-controller="BancoAdd">Agregar Registro de Cliente</a>
+<a class="btn btn-outline.primary" asp-action="BancoAdd" asp-asp-controller="Home">Agregar Registro de Cliente</a>
 
 <table class="table table-striped">
     <thead>
@@ -36,8 +36,8 @@
             
             
             <td>
-                <a class="btn btn-outline-info" asp-action="BancoEdit" asp-controller="Banco" asp-route-id="@cliente.Id">Editar</a>
-                <a class="btn btn-outline-danger" asp-action="BancoDelete" asp-controller="Banco" asp-route-id="@cliente.Id">Borrar</a>
+                <a class="btn btn-outline-info" asp-action="BancoEdit" asp-controller="Home" asp-route-id="@cliente.Id">Editar</a>
+                <a class="btn btn-outline-danger" asp-action="BancoDelete" asp-controller="Home" asp-route-id="@cliente.Id">Borrar</a>
 
             </td>
          </tr>

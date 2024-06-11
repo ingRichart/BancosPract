@@ -1,0 +1,25 @@
+@model BancosModel
+@{
+    ViewData["Title"] = "Borrar Cliente";
+}
+
+<h3 class="mb-3"></h3>
+
+
+
+
+<form asp-controller="Home" asp-action="BancoDelete">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Informacion de Banco</h5>
+            <h6 class="card-subtitle mb-2 text-body-secundary">
+                ¡VA A BORRAR! ¿Esta seguro?
+            </h6>
+            <p class="card-text">Cliente @Model.Name </p>
+        </div>
+    </div>
+
+    <input type="hidden" asp-for="Id"/>
+    <button type="submit" class="btn btn-danger">BORRAR</button>
+    <a class="btn btn-secundary" asp-controller="Home" asp-action="Privacy">CANCELAR</a>
+</form>
