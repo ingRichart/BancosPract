@@ -9,6 +9,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>( opc =>
 opc.UseSqlServer("name=MarianaSQLServerBancos"));
 
+//Revisado por RAEH
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
